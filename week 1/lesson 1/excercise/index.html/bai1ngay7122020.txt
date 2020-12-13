@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page title</title>
+</head>
+<body>
+<h1>STUDENT</h1>
+<h2>About me/About This Site </h2>
+<p>lorem ipsum dolor sit amel, consectetur adipiscing elit. Integer vehicula tincidunt nune eget varius. Sed consecctetur dolor ligula. Nullam tincidunt rutrum consetetur. Aenan elementum arcu et lorem viverra imperdict ut ut massa. Fusee vel rhoncus risus. 
+
