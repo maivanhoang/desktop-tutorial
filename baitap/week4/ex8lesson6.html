@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise 8</title>
+</head>
+<body>
+	var letter='hello my friend.';
+	var ltc=prompt('quantity you wanna cut: ');
+	var newLetter='';
+	if(ltc>letter.length){
+    		ltc=letter.length;
+	}
+	for (var i=0;i<ltc;i++){
+    		newLetter+=letter[i];
+	}
+	alert(newLetter);    
+</body>
+</html>
