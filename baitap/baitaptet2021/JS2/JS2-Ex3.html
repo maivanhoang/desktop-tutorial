@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <title>JS-Ex2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4  col-lg-4"></div>
+            <div class="col-sm-12 col-md-4  col-lg-4">
+                <form action="." class="form-group" id="calculator">
+                    <label>firstNumber:</label>
+                    <input type="text" name="FirstNumber" id="firstNumber" class="form-control" required><br>
+                    <label>secondNumber:</label>
+                    <input type="text" name="SecondNumber" id="secondNumber" class="form-control" required><br>
+                    <label>result:</label>
+                    <input type="text" name="Result" class="form-control" id="result"><br>
+                    <div class="btn-group">
+                        <button class="btn btn-info" type="button" id="sum">Sum</button>
+                        <button class="btn btn-info" type="button" id="minus">Minus</button>
+                        <button class="btn btn-info" type="button" id="multiply">multiply</button>
+                        <button class="btn btn-info" type="button" id="divide">divide</button>
+                        <button class="btn btn-info" type="button" id="clean">clean</button>
+                    </div> 
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-4  col-lg-4"></div>
+        </div>
+    </div>
+    <script>
+	var firstNum=document.getElementById("firstNumber");
+	var secondNum=document.getElementById("secondNumber");
+	var result=document.getElementById("result");
+	if(isNaN(firstNum)||isNaN(secondNum)){
+    		alert("value is not a number");
+	}
+	else{
+    		document.getElementById("sum").addEventListener("click",function(){
+        		result.value=parseFloat(firstNum.value)+parseFloat(secondNum.value);
+    		})
+    		document.getElementById("minus").addEventListener("click",function(){
+       			 result.value=firstNumber.value-secondNumber.value;
+   		 })
+    		document.getElementById("multiply").addEventListener("click",function(){
+       	 		 result.value=firstNumber.value*secondNumber.value;
+    		 })
+   		 document.getElementById("divide").addEventListener("click",function(){
+       			 result.value=firstNumber.value/secondNumber.value;
+    		 })
+    		document.getElementById("clean").addEventListener("click",function(){
+        		firstNumber.value="";
+        		secondNumber.value="";
+        		result.value="";
+   		 })
+	 }
+      </script>
+</body>
+</html>

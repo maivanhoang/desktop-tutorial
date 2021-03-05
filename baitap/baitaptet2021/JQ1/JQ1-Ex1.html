@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JQ1-Ex1</title>s
+    	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>TÍNH CHU VI VÀ DIỆN TÍCH HÌNH CHỮ NHẬT</h2>
+        <form action="#">
+            <label>Nhập vào chiều dài (Đơn vị: met)</label><br>
+            <input type="number" id="cd" name="chieudai"><br>
+            <label>Nhập vào chiều cao (Đơn vị: met)</label><br>
+            <input type="number" id="cc" name="chieucao"><br>
+            <button type="button" onclick="get()" class="bg-success mt-2">Click me to caculate!</button>
+        </form>
+        <p id="note"></p>
+        <p id="cv"></p>
+        <p id="dt"></p>
+	<script>
+		function get() {
+    			var a = document.getElementById("cd").value;
+   			var b = document.getElementById("cc").value;    
+   			if(a ==""||b ==""){
+        			alert("Xin quý khách vui lòng điền đầy đủ thông tin");
+    			}else{
+       				var cv = (parseInt(a)+parseInt(b))*2;
+        			var dt = a*b;
+        			document.getElementById("cv").innerHTML= "Chu Vi = " + cv;
+        			document.getElementById("dt").innerHTML= "Dien Tich = " + dt;
+   				 }
+		}
+	</script>
+    </div>
+</body>
+</html>

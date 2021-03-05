@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JQ1-Ex1</title>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>exercise 3</title>
+</head>
+<body>
+    	<form action="#" class="form-validate">
+        	<label for="Name">Name: </label>
+        	<input type="text" name="Name" id="Name"><br>
+        	<label for="Email">Email: </label>
+        	<input type="text" name="Email" id="Email"><br>
+        	<label for="Country">Country: </label>
+        <select id="Country" name="Country" >
+            	<option value="#"> Select Country</option>
+            	<option value="viet-nam"> Viet Nam </option>
+            	<option value="japan"> Japan</option>
+            	<option value="usa"> USA</option>
+         </select><br>
+	<input type="submit" value="Send info">
+    	</form>
+	 <script>
+        function get() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var country = document.getElementById("country").value;
+           if (name =="") {
+                alert("Please fill your name");
+                document.getElementById("name").style.borderColor="blue";
+                document.getElementById("error-name").style.display="inline-block";
+                return name;
+           }else {
+                document.getElementById("error-name").style.display="none";
+                document.getElementById("name").style.borderColor="blue"
+           }
+           if (email =="") {
+                alert("Please fill your email");
+                document.getElementById("email").style.borderColor="blue"
+                document.getElementById("error-name").style.display="inline-block";
+                return email;
+           }else{
+      		document.getElementById("error-name").style.display="inline-block"; 
+           }
+           if (country == "select-country" ) {
+                alert("Please fill your country");
+                document.getElementById("error-country").style.display="inline-block";
+               return country;
+           }else{
+                document.getElementById("error-country").style.display="none";
+           }
+            
+        }
+    </script>
+</body>
+</html>
